@@ -1,0 +1,3 @@
+<!--pages/prim/prim.wxml-->
+<view  bindtap="scan" id="scan"><image src="/images/saomatubiaohongse.png"  mode="widthFix"/></view>
+

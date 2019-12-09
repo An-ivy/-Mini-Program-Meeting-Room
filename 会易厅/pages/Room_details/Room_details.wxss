@@ -1,0 +1,217 @@
+/* pages/Room_details/Room_details.wxss */
+/* 最大盒子 */
+.roomdetails{
+  width: 100%; 
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+}
+/* 轮播图 */
+.u-wrp-bnr {
+  width: 98%;
+  height: 400rpx;
+  display: block;
+  position: relative;
+  background: #f0f0f0;
+  box-shadow: 8rpx 4rpx 10rpx #000; 
+}
+.u-img-slide {
+  width: 100%;
+  height: inherit;
+}
+/* 主要内容 */
+.details{
+  font-size: 26rpx;
+  width: 500rpx;
+  height: 60rpx;
+  margin-left:30rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 60rpx;
+}
+/* 标题 */
+.minititle{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2%; 
+  margin-top: 2%;
+}
+/* 标识 */
+.mini{
+  width: 20rpx;
+  height: 40rpx;
+  background-color: #fe8b7d;
+  display: inline-block;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+
+}
+/* 房间详情 房间评价*/
+.roomdetitle{
+  font-size: 35rpx;
+  margin-left: 18rpx; 
+  margin-top: 2%;
+}
+/* 房间详情内容 */
+.roomds{
+  margin:1% 10%;
+  width: 100%;
+}
+.roomdsin{
+  height: 60rpx;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.label1{
+  font-size: 28rpx;
+  color:#fe8b7d;
+  width: 130rpx;
+  line-height: 60rpx;
+}
+/* 底部-标签 */
+.label2{
+  font-size: 28rpx;
+  color:#fe8b7d;
+}
+/* 房间资源-标签 */
+#detailsp label{
+  line-height: 30rpx;
+  height: 30rpx;
+  display: table-cell;
+  vertical-align:middle;
+}
+/* 头像 */
+.userinfo{
+  margin: 0 5%;
+}
+.headpic{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius:50px;
+  display: inline-block;
+  border: 1rpx solid #f0f0f0;
+  margin: 10rpx;
+}
+/* 名称+时间 */
+.user text{
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+  margin: 15rpx;
+}
+/* 用户名 */
+#username{
+  color:#fe8b7d;
+  width: 200rpx;
+  height: 40rpx;
+}
+/* 时间 */
+#discusstime{
+  width: 260rpx;
+  height: 40rpx;
+}
+/* 用户信息 */
+.userinfo{
+  display: flex;
+  width: 100%;
+}
+/* 除了头像 */
+.user{
+  width:80%;
+  display: flex;
+  flex-direction: row;
+}
+/* 用户名+时间 */
+#middle{
+  width:50%;
+  display: flex;
+  flex-direction: column;
+}
+/* 五角星大小 */
+.star{
+  width: 35rpx;
+  height: 35rpx;
+ 
+}
+/* 五角星组 */
+.stars{
+  width: 200rpx;
+  display: inline-block;
+  margin-top: 1%;
+  margin-left: 10%;
+}
+/* 评论区文字图片 */
+.discussall{
+  display: flex;
+  flex-direction: column;
+  margin:0 4%;
+}
+.discusstext{
+  margin:0 4%;
+  font-size: 30rpx;
+}
+.discusspic{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 30rpx;
+  margin: 8rpx;
+}
+.discusspics{
+  width: 94%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items:space-around;
+  flex-wrap: wrap;
+  padding: 0;
+}
+/* 底部 */
+.footer{
+  width: 100%;
+  display: flex;
+  height: 110rpx;
+  margin-top: 3% 1%;
+  text-align: center;
+  position:fixed;
+  bottom:0;
+  background-color: white;
+}
+/* 图标 */
+.icon{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 22%;
+}
+/* 图标加文字 */
+.icons{
+  display: flex;
+  flex-direction: column;
+  height: 120rpx;
+  text-align: center;
+  margin: 3% 5%;
+  width: 12%;
+}
+/* 标签 */
+.icons label{
+  height: 35rpx;
+  width: 80rpx;
+  display: block;
+}
+/* 立即预定 */
+button{
+  color: white;
+  background-color:#fe8b7d;
+  height: 110rpx;
+  line-height: 110rpx;
+  width:35%;
+  border-radius: 0;
+  float: right;
+}
+.stars{
+  display: flex;
+}
+#now{
+  margin-right: 0
+}

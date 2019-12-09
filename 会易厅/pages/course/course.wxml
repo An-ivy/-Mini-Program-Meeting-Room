@@ -1,0 +1,47 @@
+<!--pages/course/course.wxml-->
+<!-- 大盒子 -->
+<view class="room"  hidden="{{hide1}}">
+<block wx:for="{{value}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+  <view class="roo_in" data-id="{{item.RoomId}}" bindtap="toRoomDetail">
+    <!-- 图片 -->
+    <view class="room_img">
+      <image src="/images/logo_03.gif" mode="widthFix" style="width:280rpx" />
+    </view>
+    <view class="room_contnet">
+      <view class="title_img">
+        <view class="title">{{item.RoomName}}</view>
+        <!--这里要换一个警报图片  -->
+        <view class="logs">
+          <image src="/images/arrow_right.png" mode="widthFix" style="width:25rpx;" />
+        </view>
+      </view>
+      <view class="roomBox">
+      <!-- item.RoomName=='HuiYiShi'?'会议室':'' -->
+      <view class="room_fang">{{item.RoomType=='HuiYiShi'?'会议室':''}}</view>
+      <view class="prict">{{item.Rental}}元/天</view>
+      </view>
+      <view class="phone">{{item.Phone}}</view>
+      <view class="cty">{{item.Address}}</view>
+    </view>
+  </view>
+  <!-- 入住时间 -->
+  <view class="times">
+    <view class="timteMort">{{item.Time}}</view>
+    <view class="fz">{{item.UserType=="FangZhu"?"房主":"他人分享"}}</view>
+  </view>
+  <view class="ztBox">
+    <view>
+    状态:{{item.OrderType==="DaiJinXING"?"待进行":item.OrderType==="ShenQing"?"申请":item.OrderType==="JinxingZhong"?"进行中":item.OrderType==="WanCheng"?"完成":item.OrderType==="CheXiao"?"撤销":""}}
+    </view>
+    <!-- item.UserType=="FangZhu"?false:true -->
+    <view class="{{item.UserType == 'FenXiang'?'active':''}}">
+    <view class="dingDan" bindtap="todetails" data-id="{{item.OrderId}}" >订单详情</view>
+    </view>
+  </view>
+  </block>
+</view>
+<!-- 无内容时 -->
+<view class="none" hidden="{{!hide1}}">
+ <image src="{{image}}"></image>
+ <view>暂无数据~</view>
+</view>

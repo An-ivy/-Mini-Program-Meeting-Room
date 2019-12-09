@@ -1,0 +1,29 @@
+<view wx:if="{{isHide}}">
+    <view wx:if="{{canIUse}}" >
+        <view class='header'>
+            <image src='{{imges}}' hidden="{{img}}" mode="widthFix" class="img"></image>
+            <image src='{{rawData.avatarUrl}}'></image>          
+        </view>
+        <view class='content'>
+            <view>因本小程序为会议室短期租赁，需申请获取获取以下权限作为登录凭证</view>
+            <text>获得你的公开信息(昵称，头像等)</text>
+        </view>
+        <view class="formItemPhone" hidden="{{sfz1}}">
+          <label></label>
+          <input name="code" placeholder="请输入真实姓名" 
+                placeholder-class='inputClass' bindinput='Inputname'  />
+        </view>
+      <view class="formItemPhone" hidden="{{sfz}}">
+          <label></label>
+          <input name="code" placeholder="请输入真实身份证号" data-id="code"
+                placeholder-class='inputClass' bindinput='InputSfz' type="idcard" />
+        </view>
+        <button class='bottom' type='primary' open-type='getPhoneNumber'  lang="zh_CN" bindgetphonenumber="getPhoneNumber" hidden="{{hide}}">
+           微信登陆
+        </button>
+         <button class='bottom' type='primary' open-type='getUserInfo'  lang="zh_CN"  bindgetuserinfo="bindGetUserInfo" hidden="{{authorization}}">
+            授权登录
+        </button>
+    </view>
+    <view wx:else>请升级微信版本</view>
+</view>

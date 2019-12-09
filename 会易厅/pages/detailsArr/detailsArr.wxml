@@ -1,0 +1,9 @@
+<view class="header">
+  <image src="http://www.samewarm.com/Sandy/photo/UserPhoto/1.jpg" mode="widthFix"/>
+  <view class="font">v1.0.0</view>
+</view>
+<view class="box" bindtap="clickBox">
+<view>资质与规则</view>
+<view  class="grr">Copyright©2018</view>
+<view class="grr">坦图toctec.cn版权所有</view>
+</view>

@@ -1,0 +1,45 @@
+<!--pages/air-conditioning/air-conditioning.wxml-->
+<!-- 最大盒子 -->
+<view id="container" style="background-image: url('../../images/airBg.png'); background-repeat:no-repeat; background-size:100% 100%; width: 100%;height: 444rpx;">
+  <!-- <view id="title">长安区</view> -->
+  <!-- <view id="title">长安区</view> -->
+    <view id="content">
+      <view class="tem">
+        <view>室内</view>
+        <view class="temtext">{{airStatus.Indoortemperature}}</view>
+      </view>
+      <view class="tem">
+        <view>室外</view>
+        <view  class="temtext">{{airStatus.Outdoortemperature}}</view>
+      </view>
+      <view  class="tem">
+        <view>空调</view>
+        <view  class="temtext">{{airStatus.Airconditioner}}°</view>
+      </view>
+    </view>
+  </view>
+<!-- 自动 -->
+<view id="auto">
+  <b>{{airStatus.ConditionerPattern}}</b>
+</view>
+<!-- 开关 -->
+  <view id="switch" hidden="{{!hiddenName}}">
+    <view id="outer">
+      <image src="{{imgswitch2}}" catchtap="onOff" class="img_nope"></image>
+      <!-- <image src="/images/air_conditioner_open.png" class="img_nope"></image> -->
+      <image src="{{imgleft2}}" id="img_left"></image>
+      <image src="{{imgright2}}" id="img_right"></image>
+      <image src="{{imgplus2}}" id="img_plus"></image>
+      <image src="{{imgminus2}}" id="img_minus"></image>
+    </view>
+  </view>
+  <view id="switch" hidden="{{hiddenName}}">
+    <view id="outer">
+      <image src="{{imgswitch1}}" catchtap="onOff" class="img_nope"></image>
+      <image src="{{imgleft1}}" catchtap="modelL" id="img_left"></image>
+      <image src="{{imgright1}}" catchtap="modelR" id="img_right"></image>
+      <image src="{{imgplus1}}" catchtap="tempU" id="img_plus"></image>
+      <image src="{{imgminus1}}" catchtap="tempD" id="img_minus"></image>
+    </view>
+  </view>
+

@@ -1,0 +1,87 @@
+<!--pages/myevaluation/evaluation.wxml-->
+<view>
+<!-- 评价标题 -->
+<view class="titleBox">
+  <view class="boxwp">
+    <block wx:for="{{Pj}}" wx:key="{{index}}">
+      <view class="wp {{index==newIndex?'active':''}}" bindtap="myClickPinja" data-index="{{index}}">{{item}}</view>
+    </block>
+  </view>
+</view>
+<!-- 内容 -->
+<view class="contntes">
+  <!-- <view wx:if="{{flt}}">{{id}}</view>
+  <view wx:if="{{flt1}}">{{id2}}</view> -->
+  <block wx:for="{{newList}}" wx:key="{{index}}" wx:if="{{flt}}">
+    <view class="contentVox">
+      <!-- 图片 -->
+      <view>
+        <image src="/images/logo_03.gif" mode="widthFix" style="width:225rpx;" />
+      </view>
+      <view class="wxBox">
+        <view class="title">{{item.RoomName}}</view>
+        <view class="roomtype">{{item.RoomType}}</view>
+        <view class="Phone">{{item.Phone}}</view>
+        <view class="address">{{item.Address}}</view>
+      </view>
+    </view>
+    <view class="timeBox">
+      <view style="  color: #fe8b7d;">{{item.Time}}</view>
+      <view class="newbnt">
+        <view bindtap="pingJia">去评价</view>
+      </view>
+    </view>
+  </block>
+</view>
+<!--已评价 -->
+<!-- wx:if="{{flt1}}" -->
+<view class="Already "  wx:if="{{flt1}}" >
+<block wx:for="{{UserName}}" wx:key="{{index}}">
+
+  <view class="Already_box">
+    <!-- 图片 -->
+    <view class="_lost">
+      <image src="/images/logo_03.gif" />
+    </view>
+    <!-- 名字 -->
+    <view class="Names">
+      <view>{{item.Nickname}}</view>
+      <view>{{item.Details}}</view>
+    </view>
+    <!-- 评价的五角星 -->
+    <view class="wjxs" >
+        <view class="{{item.MeanValue<=5?'act':''}}">☆</view>
+    <view class="{{item.MeanValue<=4?'act':''}}">☆</view>
+      <view class="{{item.MeanValue<=3?'act':''}}">☆</view>
+      <view class="{{item.MeanValue<=2?'act':''}}">☆</view>
+       <view class="{{item.MeanValue<=1?'act':''}}">☆</view>
+    </view>
+  </view>
+  <!-- 跳转 -->
+  <navigator>
+  <view class="hrefX">
+  <view class="href">
+    <view><image src="/images/logo_03.gif"mode="widthFix" style="width:125rpx;" /></view>
+    <view>{{item.RoomName}}</view>
+  </view>
+  </view>
+   </navigator>
+   <view class="timescod">{{item.Time}}</view>
+   <!-- 分享的图片 -->
+   <view class="fx_logo">
+    <view class="_lost0">
+      <image src="/images/logo_03.gif" mode="widthFix" />
+       </view>
+       
+      <view class="_lost0">
+      <image src="/images/logo_03.gif" mode="widthFix" />
+       </view>
+   </view>
+   </block>
+</view>
+</view>
+<!-- 无内容时 -->
+<view class="none" hidden="{{hide}}">
+ <image src="{{image}}"></image>
+ <view>暂无数据~</view>
+</view>

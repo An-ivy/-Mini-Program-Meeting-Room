@@ -1,0 +1,21 @@
+<!--pages/memberVip/memberVip.wxml-->
+<view class="container">
+
+<!-- 上半部分 -->
+  <view class="headInfo" style="background-image: url('/images/airBg.png'); background-repeat:no-repeat; background-size:100% 100%; width: 100%;height: 444rpx;">
+    <view class="headPhoto">
+      <image id="header" src="{{userPhoto}}"/>
+      <text>{{nickName}}</text>
+      <image id="vip" src="{{huiyuan}}"/>    
+    </view>
+    <text id="viplevel">VIP:{{vip}}</text>
+  </view>
+  <!-- 下半部分 -->
+  <view class="vipList">
+    <van-cell title="{{discountPrice.Name}}" value="{{discountPrice.Mean*10}}折" icon="{{icon1}}" border="{{ true }}" />
+    <van-cell title="{{firstCheck.Name}}" value="{{firstCheck.Mean===1?'房东':'顾客'}}" icon="{{icon2}}" border="{{ true }}" />
+    <van-cell title="{{birthdayGift.Name}}" value="{{birthdayGift.Mean*10}}折" icon="{{icon3}}" border="{{ true }}" />
+    <van-cell title="更多优惠敬请期待" value="" icon="{{icon4}}" border="{{ true }}" />
+    <text class="vipTerms">会员使用条款:</text>
+  </view>
+</view>

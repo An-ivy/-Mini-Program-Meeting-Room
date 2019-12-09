@@ -1,0 +1,82 @@
+<!--pages/room/room.wxml-->
+<!-- 最大的盒子 -->
+<view class="roomBox">
+  <!-- 入住时间 -->
+    <view class='box' bindtap="onClickFun">
+      <view class='indate'>开会时间 <text class="context" hidden="{{show}}">{{year}}/{{month}}/{{day}}/{{hours}}</text><text class="context" hidden="{{!show}}">请选择时间</text>
+        <i>
+          <image src="/images/arrow_right.png" mode="widthFix" style="width:25rpx;" />
+        </i>
+      </view>
+      <view class='outdate'>离开时间<text class="context" hidden="{{show}}">{{yearend}}/{{monthend}}/{{dayend}}/{{hoursend}}</text><text class="context" hidden="{{!show}}">请选择时间</text>
+        <i>
+          <image src="/images/arrow_right.png" mode="widthFix" style="width:25rpx;" />
+        </i>
+      </view>
+    </view>
+  <!-- 最佳位置 -->
+  <navigator url="/pages/localSearch/localSearch">
+  <view class="wz">开会位置<text class="context" decode="{{true}}">&nbsp;{{address}}</text>
+    <i>
+      <image src="/images/arrow_right.png" mode="widthFix" style="width:25rpx;" />
+    </i>
+  </view>
+  </navigator>
+  <!-- 最佳价位 -->
+  <!-- <view class="pricebox">
+    <view>最佳价位</view>
+    <view id="hide" wx:key="key" wx:for="{{pageone}}" wx:if="{{item.checked==false}}">
+      <view class="inputs">
+      <input placeholder="0" bindinput="inputFour" type="number" value="{{price}}"></input>
+      </view>
+      <view class="part context">±100元</view>
+    </view>
+    <view class="bx">
+     <radio-group class="radio-group" bindchange="radioChange1">
+        <radio id="norule" class="radio" color="#fe8b7d" bindtap="bindtap1" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked = "{{item.checked}}" wx:key="index">
+          <text>{{item.value}}</text>
+        </radio>
+      </radio-group>
+    </view>
+  </view> -->
+  <!-- 最佳户型 -->
+  <view class="apartmentBox">
+    <picker class="weui-btn" value="{{index}}" range="{{result}}" bindchange="bindTimeChange">
+      <view class="logos">
+        <text>预计人数</text><text id="result" class="bxs context">{{result[indexst]}}</text>
+        <i>
+          <image src="/images/arrow_right.png" mode="widthFix" style="width:25rpx;" />
+        </i>
+      </view>
+    </picker>
+  </view>
+  <!-- 容忍距离 -->
+  <!-- <view class="distanceBox">
+    容忍距离
+    <view class="radios1">
+        <radio-group class="radio-group" bindchange="radio">
+        <radio id="norule" class="radio" color="#fe8b7d"  wx:for="{{instrument}}" value="{{item.value}}"   checked = "{{item.checked}}"  wx:key="index">
+          <text class="method">{{item.value}}</text>
+        </radio>
+      </radio-group>
+    </view>
+  </view> -->
+<!-- 入住模式 -->
+  <!-- <view class="modeBox">
+    入住模式   
+    <view class="radios2">
+      <radio-group id="radios2" bindchange="radioChange2">
+        <radio  class="radio2" wx:for="{{how}}" value="{{item.value}}"  wx:key="index" checked="true" color="#fe8b7d">
+          <text class="method">{{item.value}}</text>
+        </radio>    
+         <radio  class="radio2" checked = "{{how.checked}}" color="#fe8b7d">
+          <text class="method">{{how.value}}</text>
+        </radio>   
+       </radio-group> 
+    </view> -->
+  <!-- </view> -->
+</view>
+<!-- 查看结果 -->
+<view class="btns">
+  <button bindtap="resultt">查看结果</button>
+</view>

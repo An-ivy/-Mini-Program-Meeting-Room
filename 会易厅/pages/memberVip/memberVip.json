@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-cell":"../../dist/cell/index"
+  },
+  "navigationBarTitleText": "会员"
+}

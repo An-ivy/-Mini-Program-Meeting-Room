@@ -1,0 +1,19 @@
+<view class="container-box">
+  <view class="img-box">
+    <!-- <view>共享房间：万象城C座0306</view> -->
+    <image bindtap="previewImg" mode="scaleToFill" src="{{imagePath}}"></image>
+    <view class="canvas-box">
+      <canvas style="width: 686rpx;height: 686rpx;background:#f1f1f1;" canvas-id="mycanvas" />
+    </view>
+  </view>
+</view>
+<view class="listName">已有共享列表</view>
+<!-- 分享列表名字 -->
+<view class="nameBox">
+  <view class="name_in" wx:for="{{shareList}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+    <view>{{item.UserName}}</view>
+    <view>{{item.Time}}</view>
+    <view class="shartTo" data-id="{{item.StartId}}" bindtap="shareTo" >{{item.Time==null?"授权共享":"解除授权"}}</view>
+  </view>
+</view>
+<room />

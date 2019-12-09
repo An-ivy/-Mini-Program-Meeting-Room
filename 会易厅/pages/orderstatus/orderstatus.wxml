@@ -1,0 +1,80 @@
+<!--pages/orderstatus/orderstatus.wxml-->
+<!-- 最大的盒子 -->
+<view class="bigger">
+<!-- 当前状态 -->
+<view class="statustitle" >
+    <text>{{ordertype}}</text>
+    <button bindtap="submit">结算</button>
+    <view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+    <view class="modalDlg" wx:if="{{showModal}}">
+    <image src="/images/close.png" id="closepic" bindtap="go"/>
+    <view class="modaltitle">订单结算</view>
+    <view id="modaldivLine"></view>
+    <view id="modalcontent">可退款{{dataTo.PayMoney}}元</view>
+    <view class="modalbtns">
+    <button>取消</button>
+    <button bindtap="tuikuan">确定</button>
+    </view>
+</view>
+  </view>
+  <!-- 房间 -->
+  <view class="statuscontent">
+    <view class="stitle" bindtap="toroomdetail">
+    <view class="roomstatus">
+      <text class="titlebigger">{{dataTo.RoomName}}</text>
+      <text>{{dataTo.Address}}</text>
+    </view> 
+      <image src="/images/arrow_right.png" id="right"/>
+    </view>
+    <!-- 下划线 -->
+    <view class="divLine"></view>
+    <view class="roomstatus">
+      <text>{{dataTo.RoomType =="HuiYiShi"?"会议室":""}}</text>
+      <text>订单时间：{{dataTo.OrderTime}}</text>
+    </view>
+    <!-- 下划线 -->
+    <view class="divLine"></view>
+    <view class="roomstatus">
+      <view class="payline">
+      <view class="paymoney">
+        <label class="titlebigger">已支付：</label><text class="titlebigger" id="havepayprice">￥{{dataTo.SumRental}}</text>
+      </view>  
+        <text id="orderst" >订单状态:{{dataTo.SumRental != 0 ?"已支付":"未支付"}}</text>
+        <button bindtap="toDetailed" hidden="hide">订单明细</button>
+      </view> 
+    </view>
+  </view>
+  <!-- 订单详情 -->
+  <view class="statuscontent">
+    <view class="titlebigger orderstatus">订单详情</view>
+     <!-- 下划线 -->
+    <view class="divLine"></view>
+    <view class="ordercontent">
+      <label>房主姓名：</label> 
+      <text>{{dataTo.UserName}}</text>
+    </view>
+    <view class="ordercontent">
+      <label>房主电话：</label> 
+      <text>{{dataTo.UserPhone}}</text>
+    </view>
+    <view class="ordercontent">
+      <label>订单编号：</label> 
+      <text>{{dataTo.OrderId}}</text>
+    </view>
+    <view class="ordercontent">
+      <label>入住时间：</label> 
+      <text> {{dataTo.Time}}</text>
+    </view>
+  </view>
+  <!-- 紧急密码 -->
+  <view class="statuscontent">
+    <text id="urgentpassword">房间紧急密码：{{password}}</text>
+  </view>
+   <!-- 发票详情 -->
+  <view class="statuscontent">
+    <view class="titlebigger orderstatus">发票详情</view>
+     <!-- 下划线 -->
+    <view class="divLine"></view>
+    <view id="invoice"></view>
+  </view>
+</view>

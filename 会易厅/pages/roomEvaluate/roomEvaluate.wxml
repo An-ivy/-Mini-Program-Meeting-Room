@@ -1,0 +1,40 @@
+<view class="evaluateBox">
+  <view class="evaluate_in">
+    <text decode="{{true}}" class="text_block">舒适度</text>
+    <block wx:for="{{wjx}}" wx:key="{{index}}">
+      <view class="wjx {{index<indexs?'active':''}}" bindtap="colorActive" data-index="{{index}}"><image src="{{item}}"  mode="widthFix"/></view>
+    </block>
+  </view>
+  <view class="evaluate_in">
+    <text decode="{{true}}" class="text_block">安全度</text>
+    <block wx:for="{{wjx}}" wx:key="{{index}}">
+      <view class="wjx {{index<indexTo? 'active':''}}" bindtap="sxdPing" data-index="{{index}}"><image src="{{item}}" mode="widthFix"/></view>
+    </block>
+  </view>
+
+  <view class="evaluate_in">
+    <text decode="{{true}}" class="text_block2">房间资源</text>
+    <block wx:for="{{wjx}}" wx:key="{{index}}">
+      <view class="wjx {{index<indexTos? 'active':''}}" data-index="{{index}}"  id="il" bindtap="fjactive"><image src="{{item}}" mode="widthFix"/></view>
+    </block>
+  </view>
+  <!-- 评论内容 -->
+ <view class="texttara">
+    <textarea placeholder="请填写评价内容（至少输入8个字）" bindinput="bat"></textarea >
+  </view>
+
+  <!-- 上传 -->
+  <view class='ui_uploader_cell'>
+    <view class='ui_uploader_item' wx:for="{{uploaderList}}" wx:key="{{index}}">
+        <icon class='ui_uploader_item_icon' bindtap='clearImg' data-index="{{index}}" type="clear" size="20" color="red"/>
+        <image bindtap='showImg' data-index="{{index}}" src='{{item}}'></image>
+    </view>
+    <view class='ui_uploader' bindtap='upload' wx:if="{{showUpload}}"></view>
+</view>
+</view>
+  <!-- <canvas class='canvas' id='scannerCanvas' canvas-id='scannerCanvas' disable-scroll="true" />
+   <view class="choose" bindtap="bindChooseImg">重新选择</view>
+      <view class="confirm" bindtap="bindConfirm">确定</view> -->
+ <view class="bnts">
+    <button bindtap="forTame">提交</button>
+  </view>

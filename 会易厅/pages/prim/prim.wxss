@@ -1,0 +1,9 @@
+/* pages/prim/prim.wxss */
+#scan image{
+  width: 200rpx;
+}
+#scan{
+  width: 200rpx;
+  margin: 0 auto;
+  margin-top: 50%;
+}

@@ -1,0 +1,163 @@
+/* pages/roomList/roomList.wxss */
+page{
+  background-color: #f0f0f0;
+}
+/* 最大的盒子 */
+.room{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.roo_in{
+  display: flex;
+  text-align: left;
+  background-color: white;
+  height: 230rpx;
+  width: 90%;
+  border-radius:5px;
+  margin-top: 15rpx;
+  align-items: center;
+  position: relative;
+}
+/* 图片 */
+.image{
+  margin-left: 12%;
+  width: 280rpx;
+  height: 180rpx;
+  display: flex;
+}
+/* 图片旁文字 */
+.text1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400rpx;
+  justify-content: center;
+  margin-top: 12%;
+  margin-left: 5%;
+}
+/* 万象城c座标题 */
+#title{
+  font-weight: bold;
+  font-size: 30rpx;
+  width: 400rpx;
+  height: 40rpx;
+  margin-left: 10%;
+  margin-top: -13%;
+  margin-bottom: 5%;
+}
+#tpi{
+  display: flex;
+  flex-basis: row;
+  justify-content: center;
+  width: 350rpx;
+  height: 150rpx;
+}
+/* 图标 */
+.icon{
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+}
+/* 图标加文字 */
+.plusicon{
+  width: 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+/* 文字 */
+.texts{
+  margin-left: 20rpx;
+  height: 40rpx;
+  width: 300rpx;
+  line-height: 40rpx;
+  font-size: 25rpx;
+}
+
+/* 付款 */
+.payment{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  color: #ff7a69;
+  font-size: 26rpx;
+  height: 50rpx;
+  margin-left: 5%;
+}
+/*备注  */
+.remarks{
+    margin-left: 15rpx;
+    font-weight: 700;
+    font-size: 26rpx;
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding-bottom:10rpx; 
+}
+.done{
+  color: #ff7a69;
+}
+.wait{
+  color:rgb(240, 195, 128);
+}
+.have{
+  color: lightblue;
+}
+.right{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  margin-left: 99%;
+  margin-top: -10%;
+}
+/* 右侧图标 */
+.righticon{
+  width: 40rpx;
+  height: 40rpx;
+}
+/* 分割线 */
+.divLine{
+ background: #fe8b7d;
+ width: 90%;
+ height: 3rpx;
+ margin: 0 auto;
+}
+.adderss{
+  overflow: hidden;
+  width: 90%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: 50rpx;
+}
+
+/* footer */
+.footer{
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.footer_text{
+  margin-bottom: 0;
+  color: #ccc;
+  font-size: 26rpx;
+}
+.none{
+  margin: 20% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fe8b7d;
+}
+.none image{
+  width: 500rpx;
+  height: 400rpx;
+}
+#scan{
+  width: 100rpx;
+}
+.km{
+    position: fixed;
+    right: 4%;
+    bottom:20%;
+}

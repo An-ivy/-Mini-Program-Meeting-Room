@@ -1,0 +1,16 @@
+<!-- 介绍 -->
+<view class="title_box">
+  <view class="imgse">
+      <image src="/imges/logo_03.gif" mode="widthFix" style="width:280rpx"/>
+  </view>
+  <view class="title">
+      <view class="title_name">
+        <text>万象成C座2206</text>
+      </view>
+      <view class="title_log">
+        <view class="order"><i></i>豪华大床房</view>
+        <view class="homde"><i></i>123456789</view>
+        <view class="sty"><i></i>河北省石家庄市桥西区中山街道自强记得发啦</view>
+      </view>
+  </view>
+</view>

@@ -1,0 +1,64 @@
+<!--pages/orderdetialed/orderdetialed.wxml-->
+<!-- 最大盒子 -->
+<view class="bigger">
+  <!-- 合计 -->
+  <view class="statuscontent">
+    <view id="totoalprice" class="roomstatus">
+      <text>合计：￥{{taskdetails.SumDeductMoney}}</text>
+    </view>
+    <!-- 下划线 -->
+    <view class="divLine"></view>
+  <!-- 订单信息    -->
+    <view class="roomstatus">
+      <text>起始时间：</text>
+      <text>{{taskdetails.Time}}</text>
+    </view>
+    <view class="roomstatus">
+      <text>共使用：</text>
+      <text>{{taskdetails.ResideDays}}天</text>
+    </view>
+  <!-- 费用 -->
+    <view class="roomstatus">
+      <text>房间总费用：</text>
+      <text>￥{{taskdetails.DeductMoney}}</text>
+    </view>
+    <!-- 下划线 -->
+    <!-- <view class="divLine"></view>
+    <view class="roomstatus">
+      <text>服务总费用：</text>
+      <text>￥{{taskdetails.SumDeductMoney}}</text>
+    </view> -->
+    <!-- 下划线 -->
+    <view class="divLine"></view>
+    <view class="roomstatus">
+      <text>使用的优惠：{{taskdetails.CouponSale.Name}}</text>
+      <text>优惠金额：{{taskdetails.CouponSale.Sale}}</text>
+    </view>
+    <!-- 下划线 -->
+    <view class="divLine"></view> 
+  </view>
+   <!-- 任务清单 -->
+<!-- <block wx:for="{{taskdetails.TaskDetailed}}"> -->
+  <!-- <view class="statuscontent">
+    <view id="tasklist">
+      <text>任务清单：</text>
+      <view class="notask">未有定制任务</view>
+      <view class="table">
+        <view class="tr">
+            <view class="th th1">任务名称</view>
+            <view class="th th2">任务数量</view>
+            <view class="th th3">任务单价</view>
+        </view>
+        <view class="tr">
+            <view class="td td1">{{item.TaskType}}</view>
+            <view class="td td2">{{item.TaskCount}}</view>
+            <view class="td td3">￥{{item.TaskMoney}}</view>
+        </view>
+        <view class="tr">
+        <view class="td">总价：{{item.TaskSumMoney}}</view>
+        </view>
+      </view>
+    </view> 
+  </view> -->
+<!-- </block>     -->
+</view>

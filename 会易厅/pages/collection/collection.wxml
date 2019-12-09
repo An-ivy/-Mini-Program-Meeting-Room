@@ -1,0 +1,37 @@
+<!--pages/collection/collection.wxml-->
+<!--pages/roomList/roomList.wxml-->
+<!-- 大盒子 -->
+<view class="room" hidden="{{hide2}}">
+<block wx:for="{{collection}}" wx:key="{{index}}">
+  <view class="roo_in" data-roomid="{{item.RoomId}}" bindtap="Detail">
+    <!-- 图片 -->
+    <view class="room_img">
+      <image src="/images/logo.png" mode="widthFix" class="image" />
+    </view>
+    <!-- 图片旁文字 -->
+    <view class="text1">
+      <view id="title" class="texts">{{item.RoomName}}</view>
+      <view id="tpi">
+        <view class="plusicon">       
+          <view>{{item.RoomType==="HuiYiShi"?"会议室":''}}</view>
+        </view>
+        <view class="plusicon">         
+          <view>{{item.Phone}}</view>
+        </view>
+        <view class="plusicon">        
+          <view>{{item.Address}}</view>
+        </view>
+      </view>      
+    </view>
+    <view class="right">{{item.Price}}/天</view>
+    <view><image src="/images/right.png" mode="widthFix" class="righticon"/></view>
+  </view>
+  <!-- 下划线 -->
+  <view class="divLine"></view>
+  </block>
+</view>
+<!-- 无内容时 -->
+<view class="none"hidden="{{hide1}}">
+ <image src="{{image}}"></image>
+ <view>暂无数据~</view>
+</view>

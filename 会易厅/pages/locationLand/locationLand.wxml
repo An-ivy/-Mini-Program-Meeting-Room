@@ -1,0 +1,6 @@
+<!--pages/locationLand/locationLand.wxml-->
+<view class='address' bindtap='onChangeAddress'>
+    <label>抢钱地点：</label> {{address}}
+    <view><label>latitude:</label> {{latitude}}</view>
+    <view><label>longitude:</label>{{longitude}}</view>   
+ </view>

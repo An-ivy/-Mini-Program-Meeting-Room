@@ -1,0 +1,35 @@
+<!--pages/opinion/Opinion.wxml-->
+ <view class="checkBox">
+ <picker  bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{index}}" range="{{pontion}}" >
+  <view class="tet">
+   <text>意见类型</text> <text class="text">{{pontion[index]}} </text><icon class="los">
+    <image src="/images/arrow_right.png" style="width:25rpx;" mode="widthFix"/>
+   </icon>
+    </view>
+  </picker>
+  <!-- 留言 -->
+    <picker  bindchange="listClick" bindcolumnchange="bindClickAchange" value="{{yanindex}}" range="{{arrts}}" >
+  <view class="tet">
+   <text>意见程度</text><text class="text">{{arrts[yanindex]}} </text> <icon class="los">
+    <image src="/images/arrow_right.png" style="width:25rpx;" mode="widthFix"/>
+   </icon>
+    </view>
+  </picker>
+  </view>
+
+  <!--输入想说的话  -->
+ <view class="texttara">
+    <textarea placeholder="请输入您想说的话（不少于8个字）" bindinput="banind"></textarea >
+  </view>
+  <!-- 添加图片 -->
+  <view class='ui_uploader_cell'>
+    <view class='ui_uploader_item' wx:for="{{uploaderList}}" wx:key="{{index}}">
+        <icon class='ui_uploader_item_icon' bindtap='clearImg' data-index="{{index}}" type="clear" size="20" color="red"/>
+        <image bindtap='showImg' data-index="{{index}}" src='{{item}}'></image>
+    </view>
+    <view class='ui_uploader' bindtap='upload' wx:if="{{showUpload}}"></view>
+</view>
+    <!-- 提交按钮 -->
+  <view class="bnts">
+    <button bindtap="getBtN">提交</button>
+  </view>

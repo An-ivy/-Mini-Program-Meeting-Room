@@ -1,0 +1,14 @@
+<view class="listbox">
+  <!-- <button class="fx" open-type="share">
+    <view class="texts" >分享软件</view>
+      <image class="right"src="/images/arrow_right.png" mode="widthFix" style="width:25rpx;" />
+  </button> -->
+  <!-- <button class="fx">
+    <view class="texts" >打赏</view>    
+      <image class="right"src="/images/arrow_right.png" mode="widthFix" style="width:25rpx;" /> 
+  </button> -->
+  <button class="fx" bindtap="aboutus">
+    <view class="texts">关于我们</view>   
+      <image class="right"src="/images/arrow_right.png" mode="widthFix" style="width:25rpx;" />
+  </button>
+</view>

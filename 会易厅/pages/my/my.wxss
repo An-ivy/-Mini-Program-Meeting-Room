@@ -1,0 +1,59 @@
+/* pages/my/my.wxss */
+.own{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+/* 背景 */
+#back{
+  width: 100%;
+  height: 500rpx;
+  position: relative;
+  z-index: 1;
+}
+/* 头像 */
+#header{
+  width: 150rpx;
+  height: 150rpx;
+  z-index: 9999999;
+  position: absolute;
+  display: block;
+  margin-top: 100rpx;
+  border: 4rpx solid #fff;
+  /* box-shadow: 0 0 10rpx #fff; */
+  border-radius: 50%
+
+}
+#name{
+  width: 150rpx;
+  text-align: center;
+  height: 50rpx;
+  z-index: 9999999;
+  position: absolute;
+  display: block;
+  margin-top: 260rpx;
+  color: white;
+  font-size: 30rpx;
+}
+/* 下方图标 */
+.navs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  height: 150rpx;
+  padding: 40rpx;
+}
+.navs image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22rpx;
+  color: gray;
+}

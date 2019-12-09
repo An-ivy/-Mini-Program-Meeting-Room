@@ -1,0 +1,7 @@
+<!--pages/friends/friends.wxml-->
+<view class="friends">
+<image class="back" src="{{pic}}"/>
+  <!-- <view id="context">在平台上邀请您的好友，注册成功后双方均可获得优惠券</view>
+</view> -->
+  <button data-id="shareBtn" open-type="share">发送链接给好友</button>
+</view>

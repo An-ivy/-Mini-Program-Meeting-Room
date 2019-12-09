@@ -1,0 +1,58 @@
+/* pages/order/order.wxss */
+
+/* 背景颜色 */
+
+page {
+  background: #eee;
+}
+
+.title_box {
+  display: flex;
+  background: white;
+  margin: 20rpx 20rpx;
+  border-radius: 10px;
+}
+
+/*图片大盒子 */
+
+.imgse {
+  width: 45%;
+  /* border: 1px sandybrown solid; */
+  height: 220rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 rpx; */
+}
+
+/* 酒店地址大盒子x */
+
+.title {
+  width: 50%;
+}
+
+/* 标题 */
+.title_name {
+  font-size: 32rpx;
+  font-weight: 500;
+  padding: 10rpx 0;
+}
+
+.title_log {
+  font-size: 22rpx;
+  display: flex;
+  /* align-items: center;/ */
+  flex-direction: column;
+  
+
+}
+.order,.homde{
+  padding: 10rpx 0;
+}
+.sty {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* padding-bottom: 10rpx; */
+}

@@ -1,0 +1,35 @@
+/* pages/friends/friends.wxss */
+page{
+  background-color: #f0f0f0;
+}
+.friends{
+  display: flex;
+  justify-content: center;
+}
+.back{
+  height: 1000rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#context{
+  width: 300rpx;
+  height: 120rpx;
+  font-size: 30rpx;
+  margin-top: 30%;
+  border: solid yellow 10rpx;
+  background-color: white;
+  padding: 40rpx;
+  color: #fe8b7d;
+  font-weight: bold;
+}
+button{
+  position: fixed;
+  width: 90%;
+  bottom:5%;
+  color:white;
+  border-radius: 50rpx;
+  background-color: #fe8b7d;
+  /* background:linear-gradient(to right, #ff9797,#fe8b7d);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+}

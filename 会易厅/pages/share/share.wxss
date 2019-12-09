@@ -1,0 +1,72 @@
+/* pages/share/share.wxss */
+
+.container-box {
+  display: flex;
+  justify-content: center;
+}
+
+.img-box {
+  position: relative;
+  margin: 10% auto;
+}
+
+.img-box image {
+  width: 356rpx;
+  height: 356rpx;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+.input-row input {
+  margin-left: 100rpx;
+  flex: 1;
+}
+
+.mybtn {
+  width: 686rpx;
+  margin: 60rpx auto;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.canvas-box {
+  position: fixed;
+  top: 999999rpx;
+  left: 0;
+}
+/* 共享列表 */
+.listName{
+  background: #eee;
+  padding: 20rpx 20rpx;
+  color: #fe8b7d;
+}
+.name_in{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  height: 80rpx;
+  line-height: 80rpx;
+   /* padding: 25rpx 0; */
+  justify-content: space-between;
+  border-bottom:1px solid #eee; 
+}
+.shartTo{
+  height: 50rpx;
+  width: 150rpx;
+  border:2px solid #fe8b7d;
+  display: flex;
+  justify-content: center;
+  line-height: 50rpx;
+  border-radius: 55rpx;
+  font-size: 25rpx;
+  color:#fe8b7d;
+  margin-top: 10rpx;
+}

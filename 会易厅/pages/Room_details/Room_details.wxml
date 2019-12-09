@@ -1,0 +1,108 @@
+<!--pages/Room_details/Room_details.wxml-->
+<view class="roomdetails">
+<!-- 轮播图 -->
+  <swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true' next-margin="-10rpx" indicator-active-color="#ff7575" indicator-color="white">
+    <block wx:for="{{bnrUrl}}" wx:for-index="index" wx:key="{{index}}">
+      <swiper-item>
+        <image src='{{item.url}}' class='u-img-slide' mode='aspectFill'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 房间详情 -->
+  <view class="roomde">
+    <view class="minititle">
+      <view class="mini"></view>
+      <view class="roomdetitle">房间详情</view>
+    </view>
+    <view class="roomds">
+      <view class="roomdsin">
+        <label class="label1">房间名称</label>
+        <text class="details" decode="{{true}}"class="details">{{details.RoomName}}</text>
+      </view>
+      <view class="roomdsin">
+        <label class="label1">房间价格</label>
+        <text class="details">￥{{details.Rental}}</text>
+      </view>
+      <view class="roomdsin">
+        <label class="label1">房间户型</label>
+        <text class="details">{{details.RoomType=="HuiYiShi"?"会议室":""}}</text>
+      </view>
+      <view class="roomdsin">
+        <label class="label1">房间地址</label>
+        <text class="details">{{details.Address}}</text>
+      </view>
+      <view class="roomdsin">
+        <label class="label1">房间房源</label>
+        <text class="details">{{details.RoomResource}}</text>
+      </view>
+      <view class="roomdsin">
+        <label class="label1">房间描述</label>
+        <text class="details">{{details.Describe}}</text>
+      </view>
+      <view class="roomdsin">
+        <label class="label1">入住须知</label>
+        <text class="details">{{details.Notice}}</text>
+      </view>
+    </view>  
+  </view>
+  <!-- 房间评价 -->
+  <view class="roomde">
+  <view class="minititle">
+      <view class="mini"></view>
+      <view class="roomdetitle">房间评价</view>
+    </view>
+  </view>
+  <block wx:for="{{content}}" wx:key="{{index}}">
+  <!-- 头像行 -->
+  <view class="userinfo">
+    <view class="headpic"></view> 
+    <view class="user">
+      <view id="middle">
+        <text id="username">{{item.Nickname}}</text> 
+        <text id="discusstime">{{item.Date}}</text>
+      </view>
+    <view class="stars">
+     <view class="{{item.MeanValue<=5?'':''}}"><image class="star" src="/images/star_yellow.png"></image></view>
+     <view class="{{item.MeanValue<=4?'':''}}"><image class="star" src="/images/star_yellow.png"></image></view>
+     <view class="{{item.MeanValue<=3?'':''}}"><image class="star" src="/images/star_yellow.png"></image></view>
+     <view class="{{item.MeanValue<=2?'':''}}"><image class="star" src="/images/star_yellow.png"></image></view>
+     <view class="{{item.MeanValue<=1?'':''}}"><image class="star" src="/images/star_yellow.png"></image></view>
+      <!-- <image class="star" src="/images/star_yellow.png"></image>
+      <image class="star" src="/images/star_yellow.png"></image>
+      <image class="star" src="/images/star_yellow.png"></image>
+      <image class="star" src="/images/star_yellow.png"></image>
+      <image class="star" src="/images/star_yellow.png"></image> -->
+    </view> 
+    </view> 
+  </view> 
+  <!-- 评论文字 -->
+  <view class="discussall">
+    <view class="discusstext">{{item.Details}}</view>
+    <view class="discusspics">
+      <image class="discusspic" src="/images/logo_03.gif"></image>
+      <image class="discusspic"src="/images/logo_03.gif"></image>
+      <image class="discusspic"src="/images/logo_03.gif"></image>
+      <image class="discusspic"src="/images/logo_03.gif"></image>
+    </view>
+  </view>
+  </block>
+  <!-- 底边 -->
+  <view class="footer">
+    <!-- 收藏 -->
+    <view class="icons" bindtap="bindCollecting">
+      <image class="icon" src="{{details.Collect?'/images/heart2.png':'/images/heart1.png'}}" bindtap="handleClickShow1"></image>
+      <label class="label2">收藏</label>
+    </view>
+    <view class="icons" bindtap="bindAlternative">
+      <image class="icon"src="{{details.Alternative?'/images/list2.png':'/images/list1.png'}}" bindtap="handleClickShow2"></image>
+      <label class="label2">备选</label>
+    </view>
+    <!-- <view class="icons">
+      <image class="icon"src="{{!isShow3?'/images/phone1.png':'/images/phone2.png'}}" bindtap="handleClickShow3"></image>
+      <label class="label2">咨询</label>
+    </view> -->
+    <button id="now" bindtap="bindBookNow">立即预定</button>
+  </view>
+</view>
+
+

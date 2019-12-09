@@ -1,0 +1,151 @@
+/* pages/room/room.wxss */
+.roomBox{
+  margin: 10% 40rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+}
+.indate,.outdate,.wz,.pricebox,.logos,.distanceBox{
+  padding: 20rpx 0;
+}
+.indate text,.outdate text,.wz text{
+  margin-left: 20rpx;
+}
+.outdate text{
+  margin-left: 30rpx;
+}
+.indate i,.outdate i,.wz i{
+  float: right;
+}
+#hide{
+  display: flex;
+  flex-direction: row;
+}
+/* 输入框 */
+.pricebox{
+  display: flex;
+  height: 40rpx;
+  flex-direction: row;
+}
+.inputs{
+  width: 130rpx;
+  margin-left: 20rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.inputs input{
+  border: 1px solid #eeee;
+  border-radius: 10rpx;
+  width: 130rpx;
+  margin-top: -3%;
+  margin-left: 3%;
+}
+.part{
+  width:120rpx;
+  margin-top: 1%;
+  margin-left: 3%;
+}
+.bxs{
+  margin-left: 20rpx;
+}
+.bx{
+  margin-top: -1.5%;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-left: 4.5%;
+  display: flex;
+  flex-direction: row;
+}
+.bx text{
+  line-height: 70rpx;
+}
+
+  /* 最佳用户 */
+.logos i{
+    float: right
+  }
+  /* 容忍距离 */
+.distanceBox{
+  display: flex;
+}
+#norule{
+  padding-bottom: 8rpx;
+  margin-left: -1%;
+}
+/* 入住模式 */
+.modeBox{
+  display: flex;
+}
+/* 查看结果 */
+.btns button{
+  width: 600rpx;
+  background: #fe8b7d;
+  left: 13%;
+  border-radius: 47rpx;
+  color: white;
+}
+.btns{
+  position: fixed;
+  bottom: 10%;
+}
+.context{
+  font-size: 28rpx;
+}
+.radio1{
+  margin-left: -1%;
+  display: flex;
+  flex-direction: row;
+}
+.timechoose{
+  font-size: 28rpx;
+  margin-left: 10rpx;
+  padding: 10rpx;
+}
+.radios1{
+  font-size: 28rpx;
+  width: 35%;
+  text-align: left;
+  padding: 0;
+  margin-left: 5%;
+}
+.radios2{
+  font-size: 28rpx;
+  text-align: left;
+  padding: 0;
+  margin-top: -0.5%;
+  margin-left: 4.5%;
+  display: flex;
+  flex-direction: row;
+  width: 480rpx;
+}
+.method{
+  font-size: 28rpx;
+  margin-left: 10rpx;
+  padding: 10rpx;
+}
+.radio2{
+ width: 200rpx;
+}
+
+.context2{
+  width: 80%;
+  margin-left: 10rpx;
+}
+.indate text{
+ 
+  margin-left: 4%; 
+}
+.outdate text{
+  margin-left: 5%;
+}
+.wz text{
+  margin-left: 4%;
+  
+}
+#hide{
+  margin-left: 1%;
+  height: 60rpx;
+}
+#result{
+  margin-left: 5%;
+}

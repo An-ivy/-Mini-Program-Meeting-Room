@@ -1,0 +1,202 @@
+/* pages/Order_details/Order_details.wxss */
+page{
+  background-color: #f0f0f0;
+}
+/* 最大盒子 */
+.bigger{
+  width: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+/* 等待用户付款 */
+#roomstate{
+  width: 95%;
+  background-color: white;
+  margin: 30rpx auto 15rpx auto;
+  border-radius:5px;
+  height: 55rpx;
+}
+/* 等待用户付款文字 */
+#roomstate text{
+  font-size: 30rpx;
+  line-height: 55rpx;
+  margin-left: 5%;
+}
+/* 房间概述 */
+#roomsummary{
+  display: flex;
+  text-align: left;
+  background-color: white;
+  height: 230rpx;
+  width: 95%;
+  margin: 15rpx auto;
+  border-radius:5px;
+  margin-top: 15rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 图片 */
+#image{
+  margin-left: 10%;
+  width: 280rpx;
+  height: 180rpx;
+  display: flex;
+}
+/* 图片旁文字 */
+.text1{
+  margin-left: -3%;
+  margin-top: 0.5%;
+}
+/* 万象城c座标题 */
+#title{
+  font-weight: bold;
+  font-size: 30rpx;
+  width: 400rpx;
+  height: 40rpx;
+  margin-left: 80rpx;
+}
+#tpi{
+  display: flex;
+  flex-basis: row;
+  margin-left: 17%;
+  margin-top: 4%;
+}
+/* 图标 */
+.icon{
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+}
+/* 图标加文字 */
+.plusicon{
+  width: 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+/* 文字 */
+.texts{
+  margin-left: 20rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 25rpx;
+}
+/* 开始结束时间 */
+#roomtime{
+  width: 95%;
+  background-color: white;
+  margin: 15rpx auto;
+  border-radius:5px;
+  height: 180rpx;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+/* 开始结束定金各行 */
+.roomt{
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  height: 180rpx;
+}
+.roomt1{
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  height: 240rpx;
+}
+/* 入住人信息 */
+#resident{
+  width: 95%;
+  background-color: white;
+  border-radius:5px;
+  height: 250rpx;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 15rpx auto;
+}
+/* 入住人标题 */
+.residenttitle{
+  font-size: 32rpx;
+  height: 30rpx;
+  margin-left: 5%;
+}
+/* 分割线 */
+.divLine{
+ background: #fe8b7d;
+ width: 90%;
+ height: 3rpx;
+ margin: 20rpx auto;
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rpx;
+}
+.roomts{
+  display: flex;
+  flex-direction: row;
+}
+/* 预订人信息 */
+#booked{
+  width: 95%;
+  background-color: white;
+  margin: 15rpx auto;
+  border-radius:5px;
+  height: 310rpx;
+  font-size: 30rpx;
+}
+/* 底部 */
+.footer{
+  display: flex;
+  background-color: #fe8b7d;
+  color: white;
+  height: 120rpx;
+  width: 100%;
+  margin: 20rpx auto rpx auto;
+  position:fixed;
+  bottom:0;
+}
+/* 按钮 */
+button{
+  font-size: 35rpx;
+  display: inline-block;
+  height: 70rpx;
+  margin-top: 26rpx;
+  line-height: 70rpx;
+  border: 1rpx white solid;
+  border-radius:15px;
+  background-color: transparent;
+  color:white;
+}
+/* 取消 */
+#btn1{
+  margin-left: 5%;
+}
+/* 支付 */
+#btn2{
+  margin-right: 5%;
+}
+.contents{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 3%;  
+}
+#address{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  width: 300rpx;
+}
+#clock{
+  color: #fe8b7d;
+  font-size: 35rpx;
+}

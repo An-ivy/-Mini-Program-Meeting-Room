@@ -1,0 +1,15 @@
+<!--pages/volume/volume.wxml-->
+<!-- 优惠券的背景图片 -->
+<block wx:for="{{s}}" wx:key="{{index}}">
+<view class="img">
+  <text class="hot">{{item.Name}}</text>
+  <view class="imit">使用条件无限制</view>
+  <view class="imitTo">使用条件无限制</view>
+  <!-- 充值1000减一百 -->
+  <view class="reduce">
+    <view>满1000减</view>
+    <view class="onehundred">100</view>
+  </view>
+</view>
+</block>
+

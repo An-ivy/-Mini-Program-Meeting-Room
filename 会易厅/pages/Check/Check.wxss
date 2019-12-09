@@ -1,0 +1,46 @@
+page{
+  background: #eee;
+}
+.checkBox{
+ background:white;
+}
+.tet{
+  display: flex;
+  margin-left: 30rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #eee;
+}
+.tet text{
+  margin: 0 40rpx;
+}
+.tet input{
+  margin-top: 30rpx;
+}
+/* 留言 */
+.luiBox{
+  display: flex;
+   margin-left: 70rpx;
+  height: 130rpx;
+  line-height: 130rpx;
+}
+.luiBox view{
+   /* margin: 0 30rpx; */
+   margin-right: 110rpx;
+}
+.luiBox input{
+   margin-top: 50rpx;
+}
+/* 提交 */
+.bnts{
+  position: fixed;
+  bottom: 5%;
+  width: 90%;
+  left: 5%;
+
+}
+.bnts button{
+  border-radius: 80rpx;
+  background: #fe8b7d;
+  color: white;
+}

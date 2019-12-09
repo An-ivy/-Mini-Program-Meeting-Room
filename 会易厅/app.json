@@ -1,0 +1,78 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/air-conditioning/air-conditioning",
+    "pages/memberVip/memberVip",
+    "pages/localSearch/localSearch",
+    "pages/CheckInTerms/CheckInTerms",
+    "pages/locationLand/locationLand",
+    "pages/roomList/roomList",
+    "pages/checkin/checkin",
+    "pages/Room_details/Room_details",
+    "pages/myEvaluation/myEvaluation",
+    "pages/roomEvaluate/roomEvaluate",
+    "pages/opinion/opinion",
+    "pages/course/course",
+    "pages/own/own",
+    "pages/detailsArr/detailsArr",
+    "pages/Check/Check",
+    "pages/share/share",
+    "pages/Order_details/Order_details",
+    "pages/order/order",
+    "pages/volume/volume",
+    "pages/collection/collection",
+    "pages/friends/friends",
+    "pages/addContact/addContact",
+    "pages/indexPlus/indexPlus",
+    "pages/name/name",
+    "pages/my/my",
+    "pages/Software/Software",
+    "pages/prim/prim",
+    "pages/dome1/dome1",
+    "pages/logs/logs",
+    "pages/orderstatus/orderstatus",
+    "pages/orderdetialed/orderdetialed"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fe8b7d",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#ff8e7a",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home_index.png",
+        "selectedIconPath": "images/home_index.png"
+      },
+      {
+        "pagePath": "pages/name/name",
+        "text": "搜索",
+        "iconPath": "images/list2.png",
+        "selectedIconPath": "images/list2.png"
+      },
+      {
+        "pagePath": "pages/roomList/roomList",
+        "text": "订单",
+        "iconPath": "images/order_index.png",
+        "selectedIconPath": "images/order_index.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/me_index.png",
+        "selectedIconPath": "images/me_index.png"
+      }
+    ]
+  }
+}

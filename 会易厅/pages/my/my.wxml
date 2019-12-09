@@ -1,0 +1,51 @@
+<!--pages/my/my.wxml-->
+<view>
+  <view class="own" bindtap="Toown">
+    <image id="back" src="{{image}}"></image>
+    <image id="header" src="{{userInfo.UserPhoto}}" />
+    <view id="name">{{userInfo.Nickname?userInfo.Nickname:logInFo}}</view>
+  </view>
+  <view class="navs">
+    <view class="nav" bindtap="navto1">
+      <image src="{{collect}}" />
+      <text>我的收藏</text>
+    </view>
+    <view class="nav" bindtap="navto2">
+      <image src="{{path}}" />
+      <text>住房历程</text>
+    </view>
+    <view class="nav" bindtap="navto3">
+      <image src="{{content}}" />
+      <text>我的评价</text>
+    </view>
+  </view>
+  <view class="navs">
+    <view class="nav" bindtap="navto4">
+      <image src="{{friend}}" />
+      <text>邀请好友</text>
+    </view>
+    <view class="nav" bindtap="navto5">
+      <image src="{{volume}}" />
+      <text>优惠券</text>
+    </view>
+    <view class="nav" bindtap="navto6">
+      <image src="{{vip}}" />
+      <text>会员</text>
+    </view>
+  </view>
+  <view class="navs">
+    <view class="nav" bindtap="navto7">
+      <image src="{{opinion}}" />
+      <text>意见反馈</text>
+    </view>
+    <view class="nav" bindtap="navto8">
+      <image src="{{software}}" />
+      <text>设置</text>
+    </view>
+    <!-- <view class="nav" bindtap="navto9"><image  src="{{circle}}"/><text>评论圈</text></view> -->
+    <view class="nav" bindtap="navto8">
+      <image src="{{}}" />
+      <text></text>
+    </view>
+  </view>
+</view>

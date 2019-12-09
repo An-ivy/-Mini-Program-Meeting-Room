@@ -1,0 +1,6 @@
+/* pages/CheckInTerms/CheckInTerms.wxss */
+
+.term{
+  margin:8%;
+  font-size: 30rpx;
+}

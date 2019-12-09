@@ -1,0 +1,190 @@
+<view class="title_box">
+  <view class="imgse">
+      <image src="{{Title.Photo}}" mode="widthFix" id="image"/>
+  </view>
+   <!-- 图片旁文字 -->
+    <view class="text1">
+      <view id="title">{{Title.RoomName}}</view>
+      <view id="tpi">
+        <view class="plusicon">
+          <image src="/images/home_gray.png" id="icon1" class="icon"></image>
+          <image src="/images/phone_gray.png" id="icon2" class="icon"></image>
+          <image src="/images/location_gray.png" id="icon3" class="icon"></image>
+        </view>
+        <view class="texts">
+          <view>{{Title.RoomType=="HuiYiShi"?"会议室":""}} </view>
+          <view>{{Title.Phone}}</view>
+          <view class="roomClass">{{Title.Address}}</view>
+        </view>
+      </view>      
+    </view>
+</view>
+<!-- 入住时间 -->
+
+<view class="time" bindtap="funCtionClick">
+  <view class="leave">
+    <view class="tiems">
+      <text decode="{{true}}" class="timeto" >开会时间&nbsp;&nbsp;&nbsp;</text><text hidden="{{show}}">{{year}}/{{month}}/{{day}}/{{hours}}</text><text hidden="{{!show}}"></text>
+    </view>
+    <view>
+      <text decode="{{true}}"  class="timeto">结束时间&nbsp;&nbsp;&nbsp;</text><text  hidden="{{show}}">{{yearend}}/{{monthend}}/{{dayend}}/{{hoursend}}</text><text  hidden="{{!show}}"></text>
+    </view>
+  </view>
+  <!-- 价钱 -->
+  <view class="pary"hidden="{{show}}">￥{{ret}}</view>
+   <view class="pary" hidden="{{!show}}">请选择时间</view>
+</view>
+
+<!-- 入住信息 -->
+<form bindsubmit="formSubmit">
+  <view class="information">
+    <view class="information_boder">
+      <view class="information_name">
+        <view class="information_titile">
+          入住人的信息
+        </view>
+        <view class="Contacts" bindtap="openrule">联系人</view>
+        <!-- 模态框 -->
+        <view class='tip-content-dialog' wx:if="{{showModal}}">
+         <view class="con">
+          <text class='contact'>常用联系人</text>
+          <text class='dialogClose' bindtap='closerule'>×</text>
+         </view>  
+          <scroll-view class="tip-dialog-view" scroll-y='true' style='height:70%;margin-top:1%;margin-left:12%;'>                    
+              <block wx:for="{{contact}}" wx:key="index" wx:for-index="in">
+              <view class='userinfo' data-id="{{in}}" bindtap="Chooseperson">
+                <label>{{item.Name}}</label>
+                <view class="linenum">
+                <text class='block'decode="{{true}}" style='padding-top:20rpx;'>手机号&ensp;</text>
+                <text class='block'style='padding-top:20rpx;padding-left:10rpx;'>{{item.Phone}}</text>
+                </view>
+                <view class="linenum">
+                <text class='block'style='padding-top:20rpx;'decode="{{true}}">身份证&ensp;</text>
+                <text class='block'style='padding-top:20rpx;padding-left:10rpx;padding-bottom:20rpx;'>{{item.IdCard}}</text>
+                <image class="righticon" src="/images/right.png"/>
+                </view>       
+              </view>
+            </block>         
+              <button id="addmanbtn" bindtap="jumpPage">添加常用联系人</button>
+          </scroll-view>         
+        </view>       
+      </view>
+    </view>
+    <!-- 姓名 联系电话。。。。 -->
+    <view class="userName">
+      <view class="names">
+        <view class="user">
+          <!-- 姓&emsp;&emsp;名： -->
+          <text decode="{{true}}">姓&emsp;&emsp;名</text>
+        </view>
+        <view class="inputs">
+          <input type="text" name="name" placeholder="请输入姓名" value="{{form.name}}" bindchange="inputName"/>
+        </view>
+      </view>
+    </view>
+    <!-- 联系电话 -->
+    <view class="userName">
+      <view class="names">
+        <view class="user">
+          <!-- 姓&emsp;&emsp;名： -->
+          <text decode="{{true}}">联系电话</text>
+        </view>
+        <view class="inputs">
+          <input type="text" placeholder="请输入联系电话" value="{{form.phone}}" bindchange="inputPhoneNum"/>
+        </view>
+      </view>
+    </view>
+    <!-- 身份证号 -->
+    <view class="userName">
+      <view class="names">
+        <view class="user">
+          <!-- 姓&emsp;&emsp;名： -->
+          <text decode="{{true}}">身份证号</text>
+        </view>
+        <view class="inputs">
+          <input type="text" placeholder="请输入身份证号" value="{{form.idcard}}" bindchange="inputId" />
+        </view>
+      </view>
+    </view>
+    <!-- 备注 -->
+    <view class="userNamed">
+      <view class="names">
+        <view class="user">
+          <!-- 姓&emsp;&emsp;名： -->
+          <text decode="{{true}}">备&emsp;&emsp;注</text>
+        </view>
+        <view class="inputs">
+          <input type="text" placeholder="请输入房间备注" bindinput="OnclickInpt" value="" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 平台优惠 -->
+  <view class="discount" bindtap="showModal">
+    <!-- <view> -->
+    <view class="discount_Y">平台优惠</view>
+    <view class="juan">{{curretsale1}}
+      <i class="icon">
+        <image src="/images/arrow_right.png" mode="widthFix" style="width:25rpx;" />
+      </i>
+    </view>
+    <!-- </view> -->
+  </view>
+  <!-- 模态框 -->
+  <view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+      <view class="modals-cancel" bindtap="hideModal"></view>
+      <view class="bottom-dialog-body bottom-pos" animation="{{animationData}}">
+        <label>优惠券</label>       
+        <image src="/images/close.png" bindtap="hideModal"/>
+        <scroll-view scroll-y='true'class="modalscontent"> 
+          <block wx:for="{{s2}}" wx:key="index" wx:for-index="id">  
+            <view class="background" data-id="{{id}}" bindtap="Choose">
+              <view class="left">
+                  <text class="hot">{{item.Name}}</text>
+                  <view class="imit">使用条件无限制</view>
+                  <view class="imitTo">使用条件无限制</view>
+              </view>                
+              <view class="center" id="check" hidden="{{id1==item.MapId?false:true}}">
+                已选中
+              </view>
+              <view class="reduce">
+                <view>满{{item.Employ}}减</view>
+                <view class="onehundred">{{item.Sale}}</view>
+              </view>
+            </view>
+          </block>      
+        </scroll-view>
+        <view bindtap="hideModal">
+        <button bindtap="nosale">不使用优惠券</button>
+        </view>        
+      </view>
+  </view>
+  <!-- <button form-type="submit">fds</button> -->
+  <!-- 同意入住条款 -->
+  <view class="clause">
+    <view class="checkbox">
+       <switch type="checkbox" color="#ff7867" bindchange="switchChange" style="zoom:.7" />我同意 <text catchtap="catchCheckTerm">入住条款</text>
+    </view>
+    <!-- <view class="switch" >
+      立刻入住
+      <switch type="switch"  color="#ff7867"   bindchange="changeSwitch1" />
+    </view> -->
+  </view>
+  <!-- 确认订单 -->
+  <view class="box">
+  <view class="confirmation">
+    <view class="morder" hidden="{{show}}">￥{{price}}</view>
+     <view class="morder"hidden="{{!show}}"></view>
+    <view class="btn">
+      <button form-type="submit" bindtap="Order" class="cc">确认订单</button>
+    </view>
+  </view>
+  </view>
+</form>
+
+
+
+
+
+
+

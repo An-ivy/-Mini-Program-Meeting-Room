@@ -1,0 +1,101 @@
+/* pages/roomList/roomList.wxss */
+/* 最大的盒子 */
+.room{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.roo_in{
+  display: flex;
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+  margin-right: 10rpx;
+  border-bottom: 1px solid #eee;
+  padding:20rpx; 
+}
+/* 万象城c座22026 */
+.room_contnet{
+  width: 59%;
+  margin-left: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.title_img{
+  display: flex;
+  justify-content: space-between;
+}
+.title{
+  font-size: 30rpx;
+  font-weight:bold;
+}
+.room_fang,.phone,.cty{
+  font-size: 25rpx;
+}
+.room_fang{
+  font-size: 25rpx;
+}
+.cty{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.roomBox{
+  display: flex;
+  justify-content: space-between;
+}
+.prict{
+  color: #ff7a69;
+  font-size: 25rpx;
+}
+.times{
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  display: flex;
+  padding: 20rpx;
+  justify-content: space-between;
+  color: #ff7a69;
+}
+.timteMort{
+  font-size: 25rpx;
+}
+.fz{
+   font-size: 25rpx;
+}
+.ztBox{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  color: #ff7a69;
+  font-size: 25rpx;
+  padding: 0 20rpx; 
+}
+.dingDan{
+  background: #ff7a69;
+  color: white;
+   font-size: 22rpx;
+   height: 40rpx;
+   display: flex;
+   align-items: center;
+   width: 100rpx;
+   justify-content: center;
+   border-radius: 20rpx;
+
+}
+.none{
+  margin: 20% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fe8b7d;
+}
+.none image{
+  width: 500rpx;
+  height: 400rpx;
+}
+.active{
+  display: none;
+}

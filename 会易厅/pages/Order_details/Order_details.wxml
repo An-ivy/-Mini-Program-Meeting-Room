@@ -1,0 +1,90 @@
+<!--pages/Order_details/Order_details.wxml-->
+<!-- 房间详情 -->
+<view class="bigger">
+  <view id="roomstate">
+    <text decode="{{true}}">等待用户付款</text>
+    <text id="clock">{{minute}}分{{second}}秒</text>
+    <text>后关闭订单</text>
+  </view>
+   <!-- 概述 -->
+  <view id="roomsummary">
+    <!-- 图片 -->
+    <view>
+      <image src="/images/logo_03.gif" id="image"></image>
+    </view>
+    <!-- 图片旁文字 -->
+    <view class="text1">
+      <view id="title">{{s3.RoomName}}</view>
+      <view id="tpi">
+        <view class="plusicon">
+          <image src="/images/home_gray.png" id="icon1" class="icon"></image>
+          <image src="/images/phone_gray.png" id="icon2" class="icon"></image>
+          <image src="/images/location_gray.png" id="icon3" class="icon"></image>
+        </view>
+        <view class="texts">
+          <view>{{s3.RoomType=="HuiYiShi"?"会议室":""}}</view>
+          <view>{{s3.ServicePhone}}</view>
+          <view id="address">{{s3.Address}}</view>
+        </view>
+      </view>      
+    </view>
+  </view>
+  <!-- 开始结束时间 -->
+  <view id="roomtime">
+    <view class="roomt">
+      <text decode="{{true}}">开始日期：</text>
+      <text decode="{{true}}">结束日期：</text>
+      <text decode="{{true}}">预付定金：</text>    
+    </view>
+    <view class="contents">
+     <text decode="{{true}}">{{starttime}}</text>  
+     <text decode="{{true}}">{{endtime}}</text>   
+     <text decode="{{true}}">￥{{s3.SumMoney}}</text>
+    </view>
+  </view>
+  <!-- 入住人信息 -->
+  <view id="resident">
+  <view class="title">
+    <view class="residenttitle"><text decode="{{true}}">入住人信息</text></view>
+    <view class="divLine"></view>
+  </view>
+    <view class="roomts">
+      <view class="roomt">
+        <text decode="{{true}}">姓名：</text>
+        <text decode="{{true}}">手机：</text>
+        <text decode="{{true}}">身份证：</text>    
+      </view>
+      <view class="contents">
+        <text decode="{{true}}">{{s3.CustomerName}}</text>
+        <text decode="{{true}}">{{s3.CustomerPhone}}</text>
+        <text decode="{{true}}">{{s3.CustomerId}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 预订人信息 -->
+  <view id="booked">
+    <view class="title">
+      <view class="residenttitle"><text decode="{{true}}">预订人信息</text></view>
+      <view class="divLine"></view>
+    </view>  
+    <view class="roomts">
+      <view class="roomt1">
+        <text decode="{{true}}">订单编号：</text> 
+        <text decode="{{true}}">创建时间：</text>
+        <text decode="{{true}}">预订人姓名：</text>
+        <text decode="{{true}}">预订人手机：</text>      
+      </view>
+      <view class="contents">
+        <text decode="{{true}}">{{s3.OrderId}}</text>
+        <text decode="{{true}}">{{s3.EstablishTime}}</text>
+        <text decode="{{true}}">{{s3.NickName}}</text>
+        <text decode="{{true}}">{{s3.UserPhone}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 底部 -->
+  <view class="footer">
+    <button id="btn1" bindtap="cancel">取消</button>
+    <button id="btn2"bindtap="pay">支付</button>
+  </view>
+</view>

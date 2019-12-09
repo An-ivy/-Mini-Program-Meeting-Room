@@ -1,0 +1,46 @@
+<!--pages/own/own.wxml-->
+<view id="own">
+  <!-- 内容 -->
+  <form bindsubmit='submitForm'>
+  <view id="outercon">
+    <view class="usercontent">
+      <label>姓名</label>
+      <view class="textment">
+        <input type="text" name="name" placeholder="请输入姓名" value="{{form.name}}" bindchange="inputName" bindinput='blurName'></input>
+        <image class="closeicon" src="/images/close.png" bindtap="clearInputEvent1"></image>
+      </view>     
+    </view>
+    <view class="usercontent">
+      <label>性别</label>         
+        <radio-group class="radio-group textment" bindchange="radioChange">
+          <label class="radio" wx:for="{{items}}" wx:key="{{index}}">
+            <radio color="#fe8b7d" value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
+          </label>
+        </radio-group>
+    </view>
+    <view class="usercontent">
+      <label>手机号</label>
+      <view class="textment">
+        <input type="number" confirm-type="done" placeholder="请输入手机号"value="{{form.phone}}" name="phone" maxlength="11" bindchange="inputPhoneNum"></input>
+        <image class="closeicon" src="/images/close.png" bindtap="clearInputEvent2"></image>
+      </view>     
+    </view>
+    <view class="usercontent">     
+      <label>邮箱</label>
+      <view class="textment">
+        <input placeholder="请输入邮箱" confirm-type="done" name="email" bindchange="inputemail" value="{{form.email}}"></input>
+        <image class="closeicon" src="/images/close.png" bindtap="clearInputEvent3"></image>
+      </view>  
+    </view>
+    <view class="usercontent"> 
+      <label>身份证号</label>
+      <view class="textment">
+        <input type="idcard" placeholder="请输入身份证号" value="{{form.idcard}}" name="id" confirm-type="done" bindchange="inputid"></input>
+        <image class="closeicon" src="/images/close.png" bindtap="clearInputEvent4"></image>
+      </view>
+    </view>
+  </view>
+  </form>
+  <button class="addmanbtn" bindtap="Addcontact">添加联系人</button>
+</view>
+

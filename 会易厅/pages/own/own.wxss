@@ -1,0 +1,248 @@
+/* pages/own/own.wxss */
+/* 最大盒子 */
+#own{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+/* 头像行 */
+#ownpic{
+  height: 150rpx;
+  display: flex;
+  flex-direction: row;
+  margin-top: 8%;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
+}
+/* 头像标签 */
+#ownpic label{
+  font-size: 30rpx;
+  /* margin-left: 10%; */
+  width: 100rpx;
+}
+/* .picOuter{
+  width: 130rpx;
+  height: 130rpx;
+} */
+.ownright{
+  align-items: center;
+  display: flex;
+  margin-right: -1%;
+}
+/* 头像图片 */
+#headpic{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius:50px;
+  display: inline-block;
+  border: 1rpx solid #f0f0f0;
+}
+#right{
+  width: 30rpx;
+  height: 30rpx;
+}
+/* uploader */
+.ui_uploader_cell {
+    width: 100%;
+    /* padding: 40rpx; */
+    box-sizing: border-box;
+    background: white;
+}
+.ui_uploader_item{
+    float: left;
+    position: relative;
+    margin-right: 30rpx;
+    margin-bottom: 30rpx;
+    width: 165rpx;
+    height: 165rpx;
+}
+.ui_uploader {
+    position: relative;
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 100rpx;
+    border: 3rpx solid #fe8b7d;
+    box-sizing: border-box;
+    background: white;
+    display: inline-block;
+    color: white;
+}
+#showpic{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 100rpx;
+    border: 3rpx solid #fe8b7d;
+    box-sizing: border-box;
+    background: #fe8b7d;
+    display: inline-block;
+    margin-left: 50%;
+    margin-top: 20%;
+    color: white;
+}
+.ui_uploader:before {
+    content: " ";
+    position: absolute;
+    width: 4rpx;
+    height: 79rpx;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* background-color: #d9d9d9; */
+}
+
+.ui_uploader:after {
+    content: " ";
+    position: absolute;
+    height: 4rpx;
+    width: 79rpx;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* background-color: #d9d9d9; */
+}
+.ui_uploader_item_icon{
+    position: absolute;
+    right: -20rpx;
+    top: -20rpx;
+    background: #fff;
+    border-radius: 50%;
+}
+.ui_uploader_item image {
+    width: 100%;
+    height: 100%;
+}
+#defaultpic{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100rpx;
+  border: 3rpx solid #fe8b7d;
+}
+/* 分割线 */
+.divLine{
+ background: #fe8b7d;
+ width: 90%;
+ height: 3rpx;
+ margin: 0 auto;
+}
+/* 内容 */
+.usercontent{
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 标题 */
+.usercontent label{
+  font-size: 30rpx;
+  width: 200rpx;
+  
+}
+.textment{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+input{
+  font-size: 28rpx;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+input[type="button"]{
+  display: flex;
+  justify-content: flex-end;
+}
+/* 单选 */
+.radio-group{
+  font-size: 28rpx;
+  width: 300rpx; 
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.radio-group label{
+  width: 100rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row; 
+  font-size: 28rpx;
+}
+radio{
+   width: 100rpx;
+   display: flex;
+   flex-direction: row; 
+   padding-left: 20rpx;
+   align-items: center;
+}
+/* 单选组 */
+/* #checkbox{
+  text-align: right;
+} */
+/* #right2{
+  float: right; 
+  margin-left: 65%;
+  margin-top: 1%;
+  width: 30rpx;
+  height: 30rpx;
+} */
+/* 分割线下 */
+#outercon{
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+}
+/* 关闭按钮 */
+.closeicon{
+  width: 40rpx;
+  height: 40rpx;
+}
+.weui-demo-dialog{
+  visibility:hidden;
+  opacity:0;
+  transition:opacity .3s;
+}
+.weui-demo-dialog_show{
+  visibility:visible;
+  opacity:1;
+}
+.weui-uploader__file{
+ border: solid darkblue;
+ width: 120rpx;
+ height: 120rpx;
+}
+.weui-uploader__input-box{
+  border: solid rebeccapurple;
+  width: 100rpx;
+  height: 100rpx;
+}
+picker{
+  width: 500rpx;
+  height: 50rpx;
+}
+picker input{
+  width: 300rpx;
+  height: 50rpx;
+}
+button{
+  border-radius: 80rpx;
+  background:#fe8b7d;
+  color: white;
+  width: 80%;
+  position: fixed;
+  bottom: 6%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+#save{
+  display: flex;
+  justify-content: center;
+}

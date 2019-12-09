@@ -1,0 +1,8 @@
+/* pages/locationLand/locationLand.wxss */
+.address{
+  width: 100vw;
+  height: 20vh;
+  color: red;
+  margin: 40rpx auto;
+
+}

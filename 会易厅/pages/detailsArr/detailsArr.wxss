@@ -1,0 +1,21 @@
+/* pages/detailsArr/detailsArr.wxss */
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.font{
+  height: 500rpx;
+  color: gray;
+}
+.grr{
+    color: gray;
+}
+.box{
+  width: 300rpx;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22rpx; 
+  
+}

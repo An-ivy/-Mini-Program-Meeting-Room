@@ -1,0 +1,150 @@
+/* pages/myevaluation/evaluation.wxss */
+.titleBox{
+  height: 80rpx;
+  line-height: 80rpx;
+ 
+}
+.boxwp{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* color: ; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffff;
+}
+.wp{
+  width: 40%;
+   text-align: center;
+  
+}
+.active{
+  border-bottom: 3px solid #fe8b7d;
+  color: #fe8b7d;
+}
+.contntes{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 20rpx auto;
+}
+.contentVox{ 
+  display: flex;
+}
+.wxBox{
+  margin-left: 30rpx;
+}
+.timeBox{
+  margin: 20rpx 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eeee;
+}
+.newbnt{
+   width:100rpx;
+ 
+}
+.newbnt view{
+  margin-top: 10rpx;
+  width:100rpx;
+  border: 1px solid #fe8b7d;
+  background: #fe8b7d;
+  color: white;
+  border-radius: 10rpx;
+  font-size: 22rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50rpx;
+}
+.Already{
+  width: 90%;
+  margin: 0 auto;
+}
+.Already_box{
+  display: flex;
+  width: 100%;
+}
+._lost{
+   width: 80rpx
+}
+._lost image{
+  border-radius:55rpx; 
+  width: 80rpx;
+  height: 80rpx;
+}
+.Names{
+  margin: 0 20rpx;
+  width: 500rpx;
+  font-size: 25rpx;
+}
+.wjxs{
+  width: 100%;
+  display: flex;
+  justify-content:flex-end;
+}
+.hrefX{
+  display: flex;
+  justify-content: flex-end;
+  height: 120rpx;
+  margin-top: 30rpx;
+}
+.href{
+  width: 80%;
+  background: #eee;
+  display: flex;
+  align-items: center;
+}
+.timescod{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 22rpx;
+  margin-top: 20rpx;
+
+}
+.address{
+  width: 70%;
+  font-size: 25rpx;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  
+}
+.title{
+  font-weight: 600;
+  font-size: 25rpx;
+
+}
+.roomtype{
+  font-size: 25rpx;
+  padding: 5rpx 0;
+}
+.Phone{
+  font-size: 25rpx;
+  padding: 5rpx 0;
+}
+/* 分享图图片 */
+.fx_logo{
+  display: flex;
+  margin-top: 50rpx;
+}
+._lost0 image{
+  width: 225rpx;
+}
+.act{
+  color: red;
+}
+.none{
+  margin: 20% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fe8b7d;
+}
+.none image{
+  width: 500rpx;
+  height: 400rpx;
+}

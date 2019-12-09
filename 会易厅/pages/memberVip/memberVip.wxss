@@ -1,0 +1,51 @@
+/* pages/memberVip/memberVip.wxss */
+
+.container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+/* 上半部分 */
+.container > .headInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-size: 30rpx;
+}
+.container > .headInfo > .headPhoto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#header{
+  width: 200rpx;
+  height: 200rpx;
+  background-color:white;
+  border-radius: 100rpx;
+}
+#vip{
+  padding: 10rpx;
+  width: 150rpx;
+  height: 58rpx;
+}
+/* 下半部分 */
+.container > .vipList {
+  width: 100vw;
+  height: 60vh;
+}
+
+.vipTerms {
+  display: block;
+  font-size: 12px;
+  color: #777;
+  margin: 20rpx 25rpx 20rpx;
+}
+#viplevel{
+  font-size: 25rpx;
+}

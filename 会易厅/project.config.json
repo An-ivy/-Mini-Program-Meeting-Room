@@ -1,0 +1,307 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.9.3",
+	"appid": "wxa2333b256b94f7b5",
+	"projectname": "%E4%BC%9A%E6%98%93%E5%8E%85",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "空调调节",
+					"pathName": "pages/air-conditioning/air-conditioning",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "会员",
+					"pathName": "pages/memberVip/memberVip",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "入住条款",
+					"pathName": "pages/CheckInTerms/CheckInTerms",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "位置选择",
+					"pathName": "pages/localSearch/localSearch",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "当前位置",
+					"pathName": "pages/locationLand/locationLand",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "入住中",
+					"pathName": "pages/checkin/checkin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "房间详情",
+					"pathName": "pages/Room_details/Room_details",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "我的评价",
+					"pathName": "pages/myEvaluation/myEvaluation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 11,
+					"name": "房间评价",
+					"pathName": "pages/roomEvaluate/roomEvaluate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 12,
+					"name": "意见反馈",
+					"pathName": "pages/opinion/opinion",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "住房历程",
+					"pathName": "pages/course/course",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人信息",
+					"pathName": "pages/own/own",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "关于我们",
+					"pathName": "pages/detailsArr/detailsArr",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 17,
+					"name": "退房",
+					"pathName": "pages/Check/Check",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "分享房间",
+					"pathName": "pages/share/share",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单详情",
+					"pathName": "pages/Order_details/Order_details",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "预定",
+					"pathName": "pages/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "优惠券",
+					"pathName": "pages/volume/volume",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的收藏",
+					"pathName": "pages/collection/collection",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 23,
+					"name": "邀请好友",
+					"pathName": "pages/friends/friends",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加联系人",
+					"pathName": "pages/addContact/addContact",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "选房结果",
+					"pathName": "pages/indexPlus/indexPlus",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 26,
+					"name": "选房",
+					"pathName": "pages/name/name",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登陆",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "设置",
+					"pathName": "pages/Software/Software",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "扫一扫",
+					"pathName": "pages/prim/prim",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "入住中",
+					"pathName": "pages/checkin/checkin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的房间",
+					"pathName": "pages/roomList/roomList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 31,
+					"name": "选房日历",
+					"pathName": "pages/dome1/dome1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 32,
+					"name": "预定日历",
+					"pathName": "pages/logs/logs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 32,
+					"name": "我的房间",
+					"pathName": "pages/roomList/roomList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "住房历程-订单详情",
+					"pathName": "pages/orderstatus/orderstatus",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单明细",
+					"pathName": "pages/orderdetialed/orderdetialed",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

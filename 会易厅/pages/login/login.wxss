@@ -1,0 +1,151 @@
+pages/login/login.wxss
+.bindPhoneTitle {
+  width: 90%;
+  padding: 50rpx 5% 127rpx;
+  font-size: 48rpx;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+}
+ 
+.formItemPhone {
+  width: 90%;
+  margin: 0 5%;
+  padding: 0 0 20rpx;
+  border-bottom: 1px solid rgba(226, 228, 232, 1);
+  margin-bottom: 40rpx;
+  position: relative;
+}
+ 
+.formItemPhone label {
+  display: inline-block;
+  width: 25%;
+  vertical-align: middle;
+  margin-right: 10%;
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+}
+ 
+.formItemPhone input {
+  display: inline-block;
+  width: 65%;
+  vertical-align: middle;
+  font-size: 32rpx;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+}
+
+.inputClass {
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(189, 199, 210, 1);
+}
+ 
+ 
+  
+.codeBtn{
+  position: absolute;
+  right: 0;
+  bottom: 20rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 139, 0, 1);
+  background: transparent;
+  padding: 0;
+  border: none;
+  outline: medium;
+  border-radius: 0;
+  z-index: 1000;
+} 
+ 
+ .codeBtn::after {
+  border: none;
+  outline: medium;
+  border-radius: 0;
+} 
+ 
+.code_toast {
+  position: absolute;
+  right: 15rpx;
+  bottom: 20rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(189, 199, 210, 1);
+} 
+
+
+
+/* --------------------------------------------------------------- */
+
+.header {
+ margin: 90rpx 0 90rpx 50rpx;
+ border-bottom: 1px solid #ccc;
+ text-align: center;
+ width: 650rpx;
+ height: 300rpx;
+ line-height: 450rpx;
+}
+  
+.header image {
+ width: 200rpx;
+ height: 200rpx;
+}
+  
+.content {
+ margin-left: 50rpx;
+ margin-bottom: 90rpx;
+}
+  
+.content text {
+ display: block;
+ color: #9d9d9d;
+ margin-top: 40rpx;
+}
+  
+.bottom {
+ border-radius: 80rpx;
+ margin: 70rpx 50rpx;
+ font-size: 35rpx;
+}
+
+
+
+.header {
+    margin: 90rpx 0 90rpx 50rpx;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    width: 650rpx;
+    height: 300rpx;
+    line-height: 450rpx;
+}
+ 
+.header image {
+    width: 200rpx;
+    height: 200rpx;
+}
+ 
+.content {
+    margin-left: 50rpx;
+    margin-bottom: 90rpx;
+}
+ 
+.content text {
+    display: block;
+    color: #9d9d9d;
+    margin-top: 40rpx;
+}
+ 
+.bottom {
+    border-radius: 80rpx;
+    margin: 70rpx 50rpx;
+    font-size: 35rpx;
+}
+.img{
+  margin-left: 190rpx;
+}

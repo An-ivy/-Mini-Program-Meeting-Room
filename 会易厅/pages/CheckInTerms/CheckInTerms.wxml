@@ -1,0 +1,6 @@
+<!--pages/CheckInTerms/CheckInTerms.wxml-->
+<view class="term">
+  <view wx:for="{{dataValue}}">
+    <text>{{item}}</text>
+  </view>
+</view>

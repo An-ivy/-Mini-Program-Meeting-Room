@@ -1,0 +1,25 @@
+<view class="checkBox">
+  <!-- <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+ <view class="tet">
+   <text>退房时间</text> <text class="text">{{time}} </text>
+   <input value='{{time}}' placeholder='请选择退房时间'/>
+   </view>
+  <!-- </picker> -->
+  <view class="tui-picker-content">
+    <picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+      <view class="tui-picker-detail tet">
+        <text>退房时间</text>
+        <text class="text"> {{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}} </text>
+      </view>
+    </picker>
+  </view>
+  <!-- 留言 -->
+  <view class="luiBox">
+    <view class="liu">留言</view>
+    <input type="text" bindinput="inputValue" placeholder="请输入您的留言内容" />
+  </view>
+</view>
+<!-- 提交按钮 -->
+<view class="bnts">
+  <button bindtap="_getTimes">提交</button>
+</view>
